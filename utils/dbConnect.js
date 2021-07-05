@@ -15,6 +15,7 @@ async function dbConnect() {
         useCreateIndex: true,
     });
 
+    //cada mudança de estado emite seu nome do evento. 0=disconnected, 1=connected, 2= connecting, 3=disconnecting. isso é opcional
     connection.isConnected = db.connection.readyState;
     console.log(connection.isConnected);
 
