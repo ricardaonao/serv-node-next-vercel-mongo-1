@@ -3,18 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": " next dev",
     "build": "next build",
+    "lint": "next lint"
     
-    "lint": "next lint",
-
-    "build:hmg": "npm run clear && npm run env:hmg next build && next export",
-    "build:prod": "npm run clear && npm run env:prod next build && next export",
-    "env:hmg": "cross-env ACTIVE_ENV=development",
-    "env:prod": "cross-env ACTIVE_ENV=production",
-    "start": "npm run env:hmg next dev",
-    "start:prod": "npm run env:prod next start"
-
   },
   "dependencies": {
     "cross-env": "^7.0.3",
@@ -26,6 +18,7 @@
   },
   "devDependencies": {
     "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
+    "eslint-config-next": "11.0.1",
+    "nodemon": "^2.0.9"
   }
 }
