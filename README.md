@@ -1,4 +1,4 @@
-# Criando API com Next.js + MongoDB hospedado na Vercel
+# CRUD / API com Next.js + MongoDB hospedado na Vercel
 ## Objetivo deste código 🎯
 Criar uma API dinâmica, interagindo com banco de dados em cloud, com os 4 principais métodos ( CRUD), utilizando o cliente HTTP integrado do **Next.js** e hospedando na **Vercel**. 
 
