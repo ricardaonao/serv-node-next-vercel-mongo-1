@@ -12,9 +12,10 @@ async function dbConnect() {
         
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useCreateIndex: true,
     });
 
-    connection.isConnected = db.connection[0].readyState;
+    connection.isConnected = db.connection.readyState;
     console.log(connection.isConnected);
 
 }
